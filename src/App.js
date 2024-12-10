@@ -20,17 +20,17 @@ const App = () => {
           path="/"
           element={
             <div>
-              {/* <Header /> */}
-              {/* <Slider /> */}
-              {/* <Services /> */}
-              {/* <Laptop /> */}
-              {/* <VideoSlider /> */}
-              {/* <Store /> */}
-              {/* <Rating /> */}
-              {/* <Repairing /> */}
+              <Header />
+              <Slider />
+              <Services />
+              <Laptop />
+              <VideoSlider />
+              <Store />
+              <Rating />
+              <Repairing />
               {/* <Brand /> */}
               {/* <MobileService /> */}
-              <Model />
+              {/* <Model /> */}
             </div>
           }/>
 
