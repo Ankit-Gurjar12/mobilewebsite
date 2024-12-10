@@ -1,18 +1,21 @@
+
+
+
 import React from 'react';
-import { Route, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+
 const Services = () => {
-  const navigate =useNavigate();
   return (
     <>
-      <div className='font-extrabold text-blue-900 text-3xl my-10 ml-8  '> Mobile Services</div>
-      <div className="grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-14 place-items-center">
-      
+      <div className="font-extrabold text-blue-900 text-3xl my-10 ml-8">
+        Mobile Services
+      </div>
+      <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 p-4">
         {[
           {
             title: 'SCREEN',
             img: 'https://images.unsplash.com/photo-1552098904-72d422955307?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9iaWxlJTIwcmVwYWlyaW5nfGVufDB8fDB8fHww',
-           Route:"/services"
+            route: '/services',
           },
           {
             title: 'SPEAKER',
@@ -49,29 +52,26 @@ const Services = () => {
         ].map((service, index) => (
           <div
             key={index}
-            className="rounded-2xl border-2 text-center shadow-lg py-5 transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+            className="rounded-2xl border-2 text-center shadow-lg py-5 transition-transform transform hover:scale-105 hover:shadow-2xl bg-white"
           >
-            <div className="w-56 h-40 mx-4 overflow-hidden">
-              <Link to="/services">
-              <img
-                src={service.img}
-                alt={service.title}
-                className="w-full h-full object-cover"
-              />
+            <div className="w-56 h-40 mx-auto overflow-hidden rounded-lg">
+              <Link to={service.route || '#'}>
+                <img
+                  src={service.img}
+                  alt={service.title}
+                  className="w-full h-full object-cover"
+                />
               </Link>
             </div>
-            <div className="mt-2 font-bold">{service.title}</div>
+            <div className="mt-4 font-bold text-lg text-gray-700">
+              {service.title}
+            </div>
           </div>
         ))}
       </div>
-     
-      
-
-
-
-
     </>
   );
 };
 
 export default Services;
+

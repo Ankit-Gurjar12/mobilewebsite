@@ -1,3 +1,7 @@
+
+
+
+
 import React, { useState, useEffect } from "react";
 
 const Slider = () => {
@@ -21,20 +25,21 @@ const Slider = () => {
 
     return () => clearInterval(interval);
   }, [images.length]);
+
   return (
     <div className="mx-auto container mt-3 relative">
-
+      
       <div className="relative overflow-hidden">
         <div className="carousel-inner">
           <img
             src={images[currentIndex]}
             alt={`Slide ${currentIndex + 1}`}
-            className="rounded-2xl mx-auto h-[700px] w-full object-cover"
+            className="rounded-2xl mx-auto h-[300px] sm:h-[500px] md:h-[600px] lg:h-[700px] w-full object-cover"
           />
         </div>
       </div>
 
-
+      
       <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
           <button
@@ -50,3 +55,4 @@ const Slider = () => {
 };
 
 export default Slider;
+
