@@ -1,14 +1,11 @@
-
-
 import React from 'react';
-
 const Laptop = () => {
   return (
-    <div className="container mx-auto px-4">
-      <div className="font-extrabold text-blue-900 text-3xl my-10 text-center">
+    <div >
+      <div className="font-extrabold text-blue-900 text-3xl my-10 ml-10 ">
         Laptop Services
       </div>
-      <div className="grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-14 place-items-center">
+      <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 p-4">
         {[
           {
             title: 'SCREEN',

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Model = () => {
   return (
@@ -73,6 +74,7 @@ const Model = () => {
     img: 'https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/e/r/f/-original-imah56hkgehywn5b.jpeg?q=70',
   },
         ].map((service, index) => (
+          <Link to="/Models">
           <div
             key={index}
             className="rounded-2xl border-2 text-center shadow-lg pt-5 transform transition duration-500 hover:scale-105 hover:shadow-2xl"
@@ -96,8 +98,10 @@ const Model = () => {
             </div>
             <div className="mt-4 font-bold">{service.title}</div>
           </div>
+          </Link>
         ))}
       </div>
+      
     </>
   );
 };

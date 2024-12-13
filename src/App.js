@@ -11,6 +11,8 @@ import MobileService from "./Component/MobileService";
 import Model from "./Component/Model";
 import Repairing from "./Component/Repairing";
 import Brand from "./Component/Brand";
+import About from "./Component/About";
+import Footer from "./Component/Footer";
 
 const App = () => {
   return (
@@ -27,16 +29,23 @@ const App = () => {
               <VideoSlider />
               <Store />
               <Rating />
-              <Repairing />
+              <About />
+              <Footer />
+
+
+               {/* <Repairing /> */}
               {/* <Brand /> */}
               {/* <MobileService /> */}
               {/* <Model /> */}
+              
             </div>
           }/>
 
         <Route path="/services" element={<Brand />} />
         <Route path="/brand" element={<MobileService />} />
         <Route path="/mobileservice" element={<Model />} />
+        <Route path="/model" element={<Model />} />
+        <Route path="/Models" element={<Repairing />} />
         <Route path="" element={<ser />} />
       </Routes>
     </div>

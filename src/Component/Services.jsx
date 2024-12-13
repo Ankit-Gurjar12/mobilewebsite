@@ -1,16 +1,13 @@
-
-
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Services = () => {
   return (
     <>
-      <div className="font-extrabold text-blue-900 text-3xl my-10 ml-8">
+      <div className="font-extrabold text-blue-900 text-3xl my-10 ml-10">
         Mobile Services
       </div>
-      <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 p-4">
+      <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 p-4 ml-10">
         {[
           {
             title: 'SCREEN',
