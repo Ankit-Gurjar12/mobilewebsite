@@ -94,14 +94,14 @@ const Repairing = () => {
         })}
       </div>
 
-      <div className="flex justify-center mt-12">
+      {/* <div className="flex justify-center mt-12">
         <button
           type="button"
           className="py-4 px-8 sm:px-40 mb-10 rounded-full bg-green-600 text-white font-extrabold hover:bg-green-700 focus:outline-none shadow-md transform transition duration-500 hover:scale-105"
         >
           Submit
         </button>
-      </div>
+      </div> */}
     </>
   );
 };

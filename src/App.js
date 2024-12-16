@@ -17,12 +17,14 @@ import Footer from "./Component/Footer";
 const App = () => {
   return (
     <div>
+      <Header />
+
       <Routes>
         <Route
           path="/"
           element={
             <div>
-              <Header />
+              
               <Slider />
               <Services />
               <Laptop />
@@ -30,7 +32,7 @@ const App = () => {
               <Store />
               <Rating />
               <About />
-              <Footer />
+            
 
 
                {/* <Repairing /> */}
@@ -48,6 +50,7 @@ const App = () => {
         <Route path="/Models" element={<Repairing />} />
         <Route path="" element={<ser />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

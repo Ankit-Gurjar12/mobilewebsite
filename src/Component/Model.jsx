@@ -7,7 +7,7 @@ const Model = () => {
       <div className='font-extrabold text-blue-900 text-3xl mt-10 mb-6 ml-8 '>
         Mobile Services
       </div>
-      <div className="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-3 place-items-center">
+      <div className="grid grid-cols-3 md:grid-cols-4  gap-2 md:gap-8 place-items-center">
         {[
    {
     title: 'F15 5G',
@@ -77,10 +77,10 @@ const Model = () => {
           <Link to="/Models">
           <div
             key={index}
-            className="rounded-2xl border-2 text-center shadow-lg pt-5 transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+            className="rounded-2xl border-2 text-center shadow-lg pt-5 p-3 md:p-5 transform transition duration-500 hover:scale-105 hover:shadow-2xl w-[100px] md:w-[250px] h-[100px] md:h-[200px]"
             style={{
               height: '200px', 
-              width: '180px', 
+              // width: '180px', 
             }}
           >
           
@@ -107,3 +107,5 @@ const Model = () => {
 };
 
 export default Model;
+
+

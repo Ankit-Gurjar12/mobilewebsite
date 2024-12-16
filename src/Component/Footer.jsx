@@ -12,7 +12,7 @@ import { FaLaptopCode } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-8 bg-gray-100">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-8 bg-gray-100 mt-10">
       <div className="flex flex-col justify-between h-full">
         <div className="mb-6">
           <div className="font-extrabold mb-2">1. About Us</div>

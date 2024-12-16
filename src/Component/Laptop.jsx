@@ -5,7 +5,7 @@ const Laptop = () => {
       <div className="font-extrabold text-blue-900 text-3xl my-10 ml-10 ">
         Laptop Services
       </div>
-      <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 p-4">
+      <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 p-4 ml-10">
         {[
           {
             title: 'SCREEN',
