@@ -1,12 +1,13 @@
 import React from "react";
 
+
 const About = () => {
   return (
     <>
       <div className="container mx-auto p-6">
+        <div className="text-center font-extrabold text-blue-900 text-3xl  md:text-4xl mb-6">System Repair World</div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           <div>
-            <h1 className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-4">About</h1>
             <h2 className="text-2xl md:text-3xl font-bold mb-6">Why create an "About Me" page?</h2>
             <p className="text-lg font-semibold mb-4">
               Creating an "About Me" page for your portfolio, blog or website can help you develop your professional brand. It's a personalized way to connect with potential employers and provide context for your work, which can help you differentiate yourself from other candidates during your job search. An "About Me" page may also help you develop relationships with potential clients and encourage them to work with you. Consider that because an "About Me" page is one of the first places many website visitors go to, it can be a great way to establish a good first impression of your brand.

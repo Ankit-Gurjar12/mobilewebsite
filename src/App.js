@@ -13,6 +13,7 @@ import Repairing from "./Component/Repairing";
 import Brand from "./Component/Brand";
 import About from "./Component/About";
 import Footer from "./Component/Footer";
+import WhatsAppChat from "./Component/WhatsappChet";
 
 const App = () => {
   return (
@@ -24,14 +25,15 @@ const App = () => {
           path="/"
           element={
             <div>
-              
+              <WhatsAppChat/>
               <Slider />
-              <Services />
-              <Laptop />
-              <VideoSlider />
-              <Store />
-              <Rating />
+              {/* <Services /> */}
+              {/* <Laptop /> */}
+              
+              {/* <Store /> */}
+              {/* <Rating /> */}
               <About />
+              <VideoSlider />
             
 
 
